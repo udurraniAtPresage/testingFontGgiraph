@@ -15,7 +15,7 @@ this_system_fonts <- systemfonts::system_fonts() |> dplyr::pull(family) |> uniqu
 if (!("Airnon" %in% registered_fonts$family) | !("Airnon" %in% this_system_fonts)) {
   systemfonts::register_font(
     name = "Airnon",
-    plain = "Airnon.ttf"
+    plain = "www/Airnon.ttf"
   )
 }
 
